@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>PR&Aacute;CTICA 06. SISTEMAS DIFERENCIALES Y EN DIFERENCIAS.</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-11-22"><meta name="DC.source" content="ASySPrac06JosueMendez.m"><style type="text/css">
+      --><title>PR&Aacute;CTICA 06. SISTEMAS DIFERENCIALES Y EN DIFERENCIAS.</title><meta name="generator" content="MATLAB 9.2"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-11-23"><meta name="DC.source" content="ASySPrac06JosueMendez.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,13 +66,13 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>PR&Aacute;CTICA 06. SISTEMAS DIFERENCIALES Y EN DIFERENCIAS.</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Integrantes</a></li><li><a href="#2">Desarrollo</a></li><li><a href="#17">Ap&eacute;ndices</a></li><li><a href="#18">Referencias</a></li></ul></div><h2 id="1">Integrantes</h2><div><ul><li>Cuevas Morales Sa&uacute;l As&iacute;s</li><li>Gonzalez Z&uacute;&ntilde;iga Alexis Bryan</li><li>M&eacute;ndez Pallares Josu&eacute;</li><li>Vallejo Camarillo Mois&eacute;s Eduardo</li></ul></div><h2 id="2">Desarrollo</h2><p><b>Problema 1.</b> Para el siguiente sistema diferencial <img src="ASySPrac06JosueMendez_eq09202273337899049860.png" alt="$\ddot{y}(t)+\dot{y}(t)+y(t)=x(t)$">, con condiciones inicales <img src="ASySPrac06JosueMendez_eq14784420352044786795.png" alt="$\dot{y}(0)=1 ; y(0)=1$"> y entrada <img src="ASySPrac06JosueMendez_eq05733120675232018958.png" alt="$x(t)=e^{-t}u(t)$">. Realiza un programa con las siguientes caracter&iacute;sticas.</p><p><b>1.1. Muestra la funci&oacute;n de transferencia del sistema.</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/ftransfer.m">https://josuemp01.github.io/CodigosPrac06/ftransfer.m</a></p><pre class="codeinput">ftransfer([1 1 1],[1])
+  </style></head><body><div class="content"><h1>PR&Aacute;CTICA 06. SISTEMAS DIFERENCIALES Y EN DIFERENCIAS.</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Integrantes</a></li><li><a href="#2">Desarrollo</a></li><li><a href="#17">Ap&eacute;ndices</a></li><li><a href="#18">Referencias</a></li></ul></div><h2 id="1">Integrantes</h2><div><ul><li>Cuevas Morales Sa&uacute;l As&iacute;s</li><li>Gonzalez Z&uacute;&ntilde;iga Alexis Bryan</li><li>M&eacute;ndez Pallares Josu&eacute;</li><li>Vallejo Camarillo Mois&eacute;s Eduardo</li></ul></div><h2 id="2">Desarrollo</h2><p><b>Problema 1.</b> Para el siguiente sistema diferencial <img src="ASySPrac06JosueMendez_eq09202273337899049860.png" alt="$\ddot{y}(t)+\dot{y}(t)+y(t)=x(t)$">, con condiciones inicales <img src="ASySPrac06JosueMendez_eq14784420352044786795.png" alt="$\dot{y}(0)=1 ; y(0)=1$"> y entrada <img src="ASySPrac06JosueMendez_eq05733120675232018958.png" alt="$x(t)=e^{-t}u(t)$">. Realiza un programa con las siguientes caracter&iacute;sticas.</p><p><b>1.1. Muestra la funci&oacute;n de transferencia del sistema.</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/ftransfer.html">https://josuemp01.github.io/CodigosPrac06/ftransfer.html</a></p><pre class="codeinput">ftransfer([1 1 1],[1])
 </pre><pre class="codeoutput">     1
 ----------
  2
 D  + D + 1
 
-</pre><p><b>1.2. Muestra la respuesta al impulso (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/rimp.m">https://josuemp01.github.io/CodigosPrac06/rimp.m</a></p><pre class="codeinput">syms <span class="string">t</span>
+</pre><p><b>1.2. Muestra la respuesta al impulso (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/rimp.html">https://josuemp01.github.io/CodigosPrac06/rimp.html</a></p><pre class="codeinput">syms <span class="string">t</span>
 rimp([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA AL IMPULSO
@@ -84,7 +84,7 @@ sqrt(3) exp| - - | sin| --------- | 2
 -------------------------------------
                   3
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_01.png" alt=""> <p><b>1.3. Muestra la respuesta a entrada cero (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/entradacero.m">https://josuemp01.github.io/CodigosPrac06/entradacero.m</a></p><pre class="codeinput">syms <span class="string">t</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_01.png" alt=""> <p><b>1.3. Muestra la respuesta a entrada cero (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/entradacero.html">https://josuemp01.github.io/CodigosPrac06/entradacero.html</a></p><pre class="codeinput">syms <span class="string">t</span>
 entradacero([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA A ENTRADA CERO
@@ -94,7 +94,7 @@ RESPUESTA A ENTRADA CERO
 exp| - - | | cos| --------- | + sqrt(3) sin| --------- | |
    \   2 / \    \     2     /              \     2     / /
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_02.png" alt=""> <p><b>1.4. Muestra la respuesta a estado cero (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/estadocero.m">https://josuemp01.github.io/CodigosPrac06/estadocero.m</a></p><pre class="codeinput">syms <span class="string">t</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_02.png" alt=""> <p><b>1.4. Muestra la respuesta a estado cero (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/estadocero.html">https://josuemp01.github.io/CodigosPrac06/estadocero.html</a></p><pre class="codeinput">syms <span class="string">t</span>
 estadocero([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA A ESTADO CERO
@@ -106,7 +106,7 @@ RESPUESTA A ESTADO CERO
 exp(-t) - exp| - - | | cos| --------- | - ------------------------ |
              \   2 / \    \     2     /               3            /
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_03.png" alt=""> <p><b>1.5. Muestra la respuesta total (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/total.m">https://josuemp01.github.io/CodigosPrac06/total.m</a></p><pre class="codeinput">syms <span class="string">t</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_03.png" alt=""> <p><b>1.5. Muestra la respuesta total (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/total.html">https://josuemp01.github.io/CodigosPrac06/total.html</a></p><pre class="codeinput">syms <span class="string">t</span>
 total([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA TOTAL
@@ -122,7 +122,7 @@ exp(-t) + exp| - - | | cos| --------- | + sqrt(3) sin| --------- | |
    - exp| - - | | cos| --------- | - ------------------------ |
         \   2 / \    \     2     /               3            /
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_04.png" alt=""> <p><b>1.6. La respuesta total al escal&oacute;n con condiciones iniciales 0 (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/escalon.m">https://josuemp01.github.io/CodigosPrac06/escalon.m</a></p><pre class="codeinput">syms <span class="string">t</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_04.png" alt=""> <p><b>1.6. La respuesta total al escal&oacute;n con condiciones iniciales 0 (simb&oacute;lico, gr&aacute;fica).</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/escalon.html">https://josuemp01.github.io/CodigosPrac06/escalon.html</a></p><pre class="codeinput">syms <span class="string">t</span>
 escalon([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA TOTAL AL ESCALON CON CONDICIONES INICIALES 0
@@ -134,9 +134,9 @@ RESPUESTA TOTAL AL ESCALON CON CONDICIONES INICIALES 0
 1 - exp| - - | | cos| --------- | + ------------------------ |
        \   2 / \    \     2     /               3            /
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_05.png" alt=""> <p><b>1.7. Usando subplot, depliega una figura con 5 gr&aacute;ficas.</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/graficas.m">https://josuemp01.github.io/CodigosPrac06/graficas.m</a></p><pre class="codeinput">syms <span class="string">t</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_05.png" alt=""> <p><b>1.7. Usando subplot, depliega una figura con 5 gr&aacute;ficas.</b></p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/graficas.html">https://josuemp01.github.io/CodigosPrac06/graficas.html</a></p><pre class="codeinput">syms <span class="string">t</span>
 graficas([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_06.png" alt=""> <p><b>Problema 2.</b> Para el sig. sistema en diferencias <img src="ASySPrac06JosueMendez_eq10303556752988134095.png" alt="$y[n-2]+y[n-1]+y[n]=x[n]$">, con condiciones iniciales <img src="ASySPrac06JosueMendez_eq01700045170761245293.png" alt="$y[-1]=1 ; y[-2]=1$"> y con entrada <img src="ASySPrac06JosueMendez_eq07641524355348424264.png" alt="$x[n]=(0.5)^{n}u[n]$">. Realiza un programa con las siguientes caracter&iacute;sticas.</p><p><b>2.1.</b> Muestra la funci&oacute;n de transferencia del sistema.</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/ftransferdif.m">https://josuemp01.github.io/CodigosPrac06/ftransferdif.m</a></p><pre class="codeinput">ftransferdif([1 1 1],[1])
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_06.png" alt=""> <p><b>Problema 2.</b> Para el sig. sistema en diferencias <img src="ASySPrac06JosueMendez_eq10303556752988134095.png" alt="$y[n-2]+y[n-1]+y[n]=x[n]$">, con condiciones iniciales <img src="ASySPrac06JosueMendez_eq01700045170761245293.png" alt="$y[-1]=1 ; y[-2]=1$"> y con entrada <img src="ASySPrac06JosueMendez_eq07641524355348424264.png" alt="$x[n]=(0.5)^{n}u[n]$">. Realiza un programa con las siguientes caracter&iacute;sticas.</p><p><b>2.1.</b> Muestra la funci&oacute;n de transferencia del sistema.</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/ftransferdif.html">https://josuemp01.github.io/CodigosPrac06/ftransferdif.html</a></p><pre class="codeinput">ftransferdif([1 1 1],[1])
 </pre><pre class="codeoutput"> 
 FUNCION DE TRANSFERENCIA
  
@@ -145,7 +145,7 @@ FUNCION DE TRANSFERENCIA
  2
 z  + z + 1
 
-</pre><p><b>2.2.</b> Muestra la respuesta al impulso (simb&oacute;lico, gr&aacute;fica, ver KroneckerDelta).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/rimpdif.m">https://josuemp01.github.io/rimpdif.m</a></p><pre class="codeinput">syms <span class="string">n</span>
+</pre><p><b>2.2.</b> Muestra la respuesta al impulso (simb&oacute;lico, gr&aacute;fica, ver KroneckerDelta).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/rimpdif.html">https://josuemp01.github.io/rimpdif.html</a></p><pre class="codeinput">syms <span class="string">n</span>
 rimpdif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA AL IMPULSO
@@ -163,7 +163,7 @@ kroneckerDelta(n, 0) + ----------------------------------------
    - ----------------------------------------
                          3
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_07.png" alt=""> <p><b>2.3.</b> Muestra la respuesta a entrada cero (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/entradacerodif.m">https://josuemp01.github.io/CodigosPrac06/entradacerodif.m</a></p><pre class="codeinput">syms <span class="string">n</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_07.png" alt=""> <p><b>2.3.</b> Muestra la respuesta a entrada cero (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/entradacerodif.html">https://josuemp01.github.io/CodigosPrac06/entradacerodif.html</a></p><pre class="codeinput">syms <span class="string">n</span>
 entradacerodif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA A ENTRADA CERO
@@ -177,7 +177,7 @@ RESPUESTA A ENTRADA CERO
    sqrt(3) | ---------- + - |      1i
            \      2       2 /
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_08.png" alt=""> <p><b>2.4.</b> Muestra la respuesta a estado cero (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/estadocerodif.m">https://josuemp01.github.io/CodigosPrac06/estadocerodif.m</a></p><pre class="codeinput">syms <span class="string">n</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_08.png" alt=""> <p><b>2.4.</b> Muestra la respuesta a estado cero (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/estadocerodif.html">https://josuemp01.github.io/CodigosPrac06/estadocerodif.html</a></p><pre class="codeinput">syms <span class="string">n</span>
 estadocerodif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA A ESTADO CERO
@@ -202,7 +202,7 @@ where
               2
 
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_09.png" alt=""> <p><b>2.5.</b> Muestra la respuesta total (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/totaldif.m">https://josuemp01.github.io/CodigosPrac06/totaldif.m</a></p><pre class="codeinput">syms <span class="string">n</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_09.png" alt=""> <p><b>2.5.</b> Muestra la respuesta total (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/totaldif.html">https://josuemp01.github.io/CodigosPrac06/totaldif.html</a></p><pre class="codeinput">syms <span class="string">n</span>
 totaldif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA TOTAL
@@ -227,7 +227,7 @@ where
               2
 
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_10.png" alt=""> <p><b>2.6.</b> La respuesta total al escal&oacute;n con condiciones iniciales 0 (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/escalondif.m">https://josuemp01.github.io/CodigosPrac06/escalondif.m</a></p><pre class="codeinput">syms <span class="string">n</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_10.png" alt=""> <p><b>2.6.</b> La respuesta total al escal&oacute;n con condiciones iniciales 0 (simb&oacute;lico, gr&aacute;fica).</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/escalondif.html">https://josuemp01.github.io/CodigosPrac06/escalondif.html</a></p><pre class="codeinput">syms <span class="string">n</span>
 escalondif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 </pre><pre class="codeoutput"> 
 RESPUESTA TOTAL AL ESCALON CON CONDICIONES INICIALES 0
@@ -252,7 +252,7 @@ where
               2
 
 
-</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_11.png" alt=""> <p><b>2.7.</b> Usando subplot, depliega una figura con 5 gr&aacute;ficas.</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/graficasdif.m">https://josuemp01.github.io/CodigosPrac06/graficasdif.m</a></p><pre class="codeinput">syms <span class="string">n</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_11.png" alt=""> <p><b>2.7.</b> Usando subplot, depliega una figura con 5 gr&aacute;ficas.</p><p>El c&oacute;digo usado para resolver este problema se encuentra en el sig. enlace: <a href="https://josuemp01.github.io/CodigosPrac06/graficasdif.html">https://josuemp01.github.io/CodigosPrac06/graficasdif.html</a></p><pre class="codeinput">syms <span class="string">n</span>
 graficasdif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 </pre><img vspace="5" hspace="5" src="ASySPrac06JosueMendez_12.png" alt=""> <h2 id="17">Ap&eacute;ndices</h2><p>C&oacute;digos otorgados por el profesor, de los cuales se obtuvieron los c&oacute;digos que ayudaron a resolver los problemas 1 y 2.</p><p>Funci&oacute;n "fourier2016a", c&oacute;digo que resuelve ecuaciones diferenciales de orden n con la transformada de Fourier, el programa despliega: paso por paso la metodolog&iacute;a de soluci&oacute;n, la soluci&oacute;n de la ecuaci&oacute;n diferencial, y la gr&aacute;fica tanto de la se&ntilde;al de entrada como de la se&ntilde;al de salida.</p><pre class="language-matlab"><span class="keyword">function</span> fourier2016a(a,b,xi,t0)
 <span class="comment">% a coeficientes de las derivadas de la salida menor a mayor [a_0, ..., a_n]</span>
@@ -509,34 +509,34 @@ disp( <span class="string">' '</span>)
 % *1.1. Muestra la función de transferencia del sistema.*
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/ftransfer.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/ftransfer.html>
 ftransfer([1 1 1],[1])
 %%
 % *1.2. Muestra la respuesta al impulso (simbólico, gráfica).*
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/rimp.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/rimp.html>
 syms t
 rimp([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 %%
 % *1.3. Muestra la respuesta a entrada cero (simbólico, gráfica).*
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/entradacero.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/entradacero.html>
 syms t
 entradacero([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 %%
 % *1.4. Muestra la respuesta a estado cero (simbólico, gráfica).*
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/estadocero.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/estadocero.html>
 syms t
 estadocero([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 %%
 % *1.5. Muestra la respuesta total (simbólico, gráfica).*
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/total.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/total.html>
 syms t
 total([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 %%
@@ -544,14 +544,14 @@ total([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 % (simbólico, gráfica).*
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/escalon.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/escalon.html>
 syms t
 escalon([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 %%
 % *1.7. Usando subplot, depliega una figura con 5 gráficas.*
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/graficas.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/graficas.html>
 syms t
 graficas([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 %%
@@ -563,35 +563,35 @@ graficas([1 1 1],[1],[1 1],exp(-t)*heaviside(t),10)
 % *2.1.* Muestra la función de transferencia del sistema.
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/ftransferdif.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/ftransferdif.html>
 ftransferdif([1 1 1],[1])
 %%
 % *2.2.* Muestra la respuesta al impulso (simbólico, gráfica, ver
 % KroneckerDelta).
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/rimpdif.m>
+% enlace: <https://josuemp01.github.io/rimpdif.html>
 syms n
 rimpdif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 %%
 % *2.3.* Muestra la respuesta a entrada cero (simbólico, gráfica).
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/entradacerodif.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/entradacerodif.html>
 syms n
 entradacerodif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 %%
 % *2.4.* Muestra la respuesta a estado cero (simbólico, gráfica).
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/estadocerodif.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/estadocerodif.html>
 syms n
 estadocerodif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 %%
 % *2.5.* Muestra la respuesta total (simbólico, gráfica).
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/totaldif.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/totaldif.html>
 syms n
 totaldif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 %%
@@ -599,14 +599,14 @@ totaldif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 % (simbólico, gráfica).
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/escalondif.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/escalondif.html>
 syms n
 escalondif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 %%
 % *2.7.* Usando subplot, depliega una figura con 5 gráficas.
 % 
 % El código usado para resolver este problema se encuentra en el sig.
-% enlace: <https://josuemp01.github.io/CodigosPrac06/graficasdif.m>
+% enlace: <https://josuemp01.github.io/CodigosPrac06/graficasdif.html>
 syms n
 graficasdif([1 1 1],[1],[1 1],[0],(0.5^(n))*heaviside(n),10)
 %% Apéndices
